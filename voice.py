@@ -75,6 +75,17 @@ def listen():
 def implement(command):
     srcom = command.partition(' ')[0]
     print(srcom)
+    
+    if command == "hello" or command == "hey" or command == "hey there":
+        mssge = tk.Text(win, height = 2, width = 50)
+        mssge.insert(tk.INSERT, "Hey there!!! \nHow can I help you")
+        mssge.pack()
+        win.update()
+        sen = 'Hey there!  How can I help you?'
+        ttseng.say(sen)
+        ttseng.runAndWait()
+        time.sleep(1)
+        mssge.pack_forget()      
 
     elif command == "calculator" or command == "Calculator" or command == "calc" or command == "open calculator":
         mssge = tk.Text(win, height = 1, width = 50)
@@ -85,17 +96,6 @@ def implement(command):
         ttseng.say(sen)
         ttseng.runAndWait()
         os.startfile('C:\Windows\System32\calc.exe')
-        time.sleep(1)
-        mssge.pack_forget()
-
-    elif command == "hello" or command == "hey" or command == "hey there":
-        mssge = tk.Text(win, height = 2, width = 50)
-        mssge.insert(tk.INSERT, "Hey there!!! \nHow can I help you")
-        mssge.pack()
-        win.update()
-        sen = 'Hey there!  How can I help you?'
-        ttseng.say(sen)
-        ttseng.runAndWait()
         time.sleep(1)
         mssge.pack_forget()
         
