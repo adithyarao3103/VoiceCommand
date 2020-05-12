@@ -76,18 +76,6 @@ def implement(command):
     srcom = command.partition(' ')[0]
     print(srcom)
 
-    if command == "Chrome" or command == "open Chrome" or command == "chrome" or command == "Google":
-        mssge = tk.Text(win, height = 1, width = 50)
-        mssge.insert(tk.INSERT, "Opening Chrome...")
-        mssge.pack()
-        win.update()
-        sen = 'Opening chrome'
-        ttseng.say(sen)
-        ttseng.runAndWait()
-        os.startfile('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe')
-        time.sleep(1)
-        mssge.pack_forget()
-
     elif command == "calculator" or command == "Calculator" or command == "calc" or command == "open calculator":
         mssge = tk.Text(win, height = 1, width = 50)
         mssge.insert(tk.INSERT, "Opening Calculator...")
