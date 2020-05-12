@@ -4,3 +4,4 @@ calculate expression
 open program name
 what is the time
 general responds like hello, hey there
+google translate coming soon.....
