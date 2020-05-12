@@ -2,7 +2,7 @@ import tkinter as tk
 import os
 import time
 
-line_index = 78
+line_index = 89
 lines = None
 
 pypath = os.getcwd() + '\pyvoice.py'
