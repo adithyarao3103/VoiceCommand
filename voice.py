@@ -86,18 +86,6 @@ def implement(command):
         ttseng.runAndWait()
         time.sleep(1)
         mssge.pack_forget()      
-
-    elif command == "calculator" or command == "Calculator" or command == "calc" or command == "open calculator":
-        mssge = tk.Text(win, height = 1, width = 50)
-        mssge.insert(tk.INSERT, "Opening Calculator...")
-        mssge.pack()
-        win.update()
-        sen = 'Opening calculator'
-        ttseng.say(sen)
-        ttseng.runAndWait()
-        os.startfile('C:\Windows\System32\calc.exe')
-        time.sleep(1)
-        mssge.pack_forget()
         
     elif command == "what is the time" or command == "time" or command == "current time" or command == "what is time":
         var = time.ctime()
