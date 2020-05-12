@@ -1,0 +1,7 @@
+tkinter
+pyttsx3
+pyaudio
+wave
+wikipedia
+playsound
+speech_recognition
