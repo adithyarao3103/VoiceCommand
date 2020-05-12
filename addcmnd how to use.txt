@@ -1,0 +1,3 @@
+addcmnd.py script allows you to add installed programs to the voice.py script to make it accessible to the program<br />
+program name is the name with which you call the program<br />
+program path is the complete path to the .exe file
